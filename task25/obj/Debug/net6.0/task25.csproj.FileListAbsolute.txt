@@ -1,0 +1,5 @@
+C:\Users\MyUser\Desktop\прога\geekbrains\Знакомство с языками программирования С#\homework4\task25\obj\Debug\net6.0\task25.csproj.AssemblyReference.cache
+C:\Users\MyUser\Desktop\прога\geekbrains\Знакомство с языками программирования С#\homework4\task25\obj\Debug\net6.0\task25.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MyUser\Desktop\прога\geekbrains\Знакомство с языками программирования С#\homework4\task25\obj\Debug\net6.0\task25.AssemblyInfoInputs.cache
+C:\Users\MyUser\Desktop\прога\geekbrains\Знакомство с языками программирования С#\homework4\task25\obj\Debug\net6.0\task25.AssemblyInfo.cs
+C:\Users\MyUser\Desktop\прога\geekbrains\Знакомство с языками программирования С#\homework4\task25\obj\Debug\net6.0\task25.csproj.CoreCompileInputs.cache
