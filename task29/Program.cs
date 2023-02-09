@@ -3,32 +3,41 @@
 // 6, 1, 33 -> [6, 1, 33]
 //из строки с 8 элементами разбить на 8 элементов и добавить в массив
 
-//1 функция ввода в виде строки
-//2 Разбиение строки на части по запятой и сохранение в массив
-//3 перевод массива в число
-
-string Input_func()
+string Input_func() //Ввод строки
 {
     Console.WriteLine("Введите 8 чисел через запятую, например '1, 2, 3, 4, 5, 6, 7, 8'");
-    string input_string = Console.ReadLine()!; 
-    int[] input_array = int.Parse(input_string.Split(' '));
+    string input_string = Console.ReadLine()!;
+    return input_string;
+}
 
+int[] Magic(string string_from_input) //Преобразование строки в массив строк и преобразование в массив чисел
+{
+    string input_array = string_from_input.Replace(" ", ""); //убираю пробелы
 
-    // while (input.Length == 0)
-    // {
-    //     Console.WriteLine("Введите 8 чисел через запятую, например '1, 2, 3, 4, 5, 6, 7, 8'");
-    //     input = Console.ReadLine()!;    
-    // }
-    
+    string[] array = string_from_input.Split(",");
+    int[] out_array = new int[8];
+    for (int i = 0; i < array.Length; i++)
+    {
+        out_array[i] = int.Parse(array[i]);
+    }
+    return out_array;
+}
 
-    return input_array;
+void Print_func(int[] array)
+{
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write($"{array[i]}" +  ", ");
+    }
+    Console.Write($"{array[array.Length - 1]}");
 }
 
 void Main()
 {
     Console.Clear();
-    int[] entry = Input_func();
-
-
+    string entry = Input_func();
+    int[] array = Magic(entry);
+    Print_func(array);
 }
 
+Main();
